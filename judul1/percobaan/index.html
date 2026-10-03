@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Mahasiswa</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Data Mahasiswa</h1>
+        <p>Praktikum Pemrograman Web</p>
+
+        <img src="C:\kulliah\5\prakpw\judul1\percobaan\a.png" alt="Ini Adalag Gambar A" width="100" height="100">
+    </header>
+
+    <hr>
+
+    <nav>
+        <ul>
+            <li><a href="#informasi-sistem">Informasi</a></li>
+            <li><a href="#daftar-mahasiswa">Daftar Mahasiswa</a></li>
+            <li><a href="#form-tambah">Tambah Mahasiswa</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+    <main>
+
+        <section id="informasi-sistem">
+
+            <h2>Informasi Sistem</h2>
+
+            <p>
+                Website ini digunakan untuk menampilkan
+                data mahasiswa.
+            </p>
+
+            <article>
+                <h3>Tentang Sistem</h3>
+
+                <p>
+                    Sistem ini dibuat untuk praktikum
+                    HTML dan HTML5.
+                </p>
+            </article>
+
+        </section>
+
+        <hr>
+
+        <section id="daftar-mahasiswa">
+
+            <h2>Daftar Mahasiswa</h2>
+
+            <p>Data mahasiswa aktif:</p>
+
+            <table border="1">
+
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Foto</th>
+                        <th>NPM</th>
+                        <th>Nama</th>
+                        <th>Prodi</th>
+                        <th>Angkatan</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>
+                        <img src="C:\kulliah\5\prakpw\judul1\percobaan\a.png" height="50" width="50">
+                        </td>
+                        <td>2415000000</td>
+                        <td>Andi</td>
+                        <td>Teknik Informatika</td>
+                        <td>2024</td>
+                        <td>andi@gmail.com</td>
+                        <td>Aktif</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>
+                        <img src="C:\kulliah\5\prakpw\judul1\percobaan\a.png" height="50" width="50">
+                        </td>
+                        <td>2315061119</td>
+                        <td>Budi</td>
+                        <td>Teknik Informatika</td>
+                        <td>2023</td>
+                        <td>budi@gmail.com</td>
+                        <td>Aktif</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>
+                        <img src="C:\kulliah\5\prakpw\judul1\percobaan\a.png" height="50" width="50">
+                        </td>
+                        <td>2415061120</td>
+                        <td>Cui</td>
+                        <td>Teknik Informatika</td>
+                        <td>2024</td>
+                        <td>cui@gmail.com</td>
+                        <td>Aktif</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <hr>
+
+        <section id="form-tambah">
+
+            <h2>Tambah Mahasiswa</h2>
+
+            <p>Masukkan data mahasiswa:</p>
+
+            <form action="#" method="POST">
+
+                <fieldset>
+
+                    <legend>Data Mahasiswa</legend>
+
+                    <p>
+                        <label for="npm">NPM:</label><br>
+                        <input
+                            type="text"
+                            name="npm"
+                            placeholder="2315061118"
+                            required
+                            pattern="[0-9]{8,12}"
+                            title="NPM harus berupa angka 8-12 digit"
+                        ><br><small>NPM</small>
+                    </p>
+
+                    <p>
+                        <label for="nama">Nama Lengkap:</label><br>
+                        <input
+                            type="text"
+                            id="nama"
+                            name="nama"
+                            placeholder="Mebat"
+                            required
+                            minlength="3"
+                            maxlength="100"
+                        ><br><small>Nama</small>
+                    </p>
+
+                    <p>
+                        <label for="program_studi">Program Studi:</label><br>
+
+                        <select id="program_studi" name="program_studi" required>
+                            <option value="">
+                                Pilih Prodi
+                            </option>
+
+                            <option>
+                                Teknik Informatika
+                            </option>
+
+                            <option>
+                                Sistem Informasi
+                            </option>
+                        </select><br><small>Prodi</small>
+                    </p>
+
+                    <p>
+                        <label for="angkatan">Tahun Angkatan:</label><br>
+
+                        <input
+                            type="number"
+                            id="Angkatan"
+                            name="angkatan"
+                            placeholder="2024"
+                            min="2018"
+                            max="2026"
+                            required
+                        ><br><small>Tahun Angkatan</small>
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label><br>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="email.example.com"
+                            required
+                        ><br><small>Email</small>
+                    </p>
+
+                    <button type="submit">
+                        Simpan Data daftar-mahasiswa
+                    </button>
+
+                    <button type="reset">
+                        Reset Formulir
+                    </button>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+
+        <p>
+            &copy; 2026 Data Mahasiswa
+        </p>
+
+        <p>
+            <a href="mailto:mahasiswa@gmail.com">
+                Email Pengembang
+            </a>
+        </p>
+
+        <a href="#top">Kembali ke atas</a>
+
+    </footer>
+
+</body>
+</html>
